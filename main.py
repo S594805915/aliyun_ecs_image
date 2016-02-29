@@ -68,9 +68,6 @@ if __name__ == '__main__':
 		time.sleep(5)
 	print "Instance {instance_id} is stopped".format(instance_id=instance_id)
 
-	snapshot.delete_snapshot(clt, snapshot_id)
-	print "Snapshot {snapshot_id} is Dropped".format(snapshot_id=snapshot_id)
-
 	instance.delete_instance(clt, instance_id)
 	print "Instance {instance_id} is Dropped".format(instance_id=instance_id)
 
