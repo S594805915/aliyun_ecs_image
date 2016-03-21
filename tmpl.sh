@@ -1,8 +1,9 @@
 #!/bin/bash
 #install jdk
-wget http://xiaoer-packages.oss-cn-shenzhen.aliyuncs.com/jdk-7u79-linux-x64.tar.gz -P /user/local
-cd /user/local
+wget http://xiaoer-packages.oss-cn-shenzhen.aliyuncs.com/jdk-7u79-linux-x64.tar.gz
 tar -xzvf jdk-7u79-linux-x64.tar.gz
+rm jdk-7u79-linux-x64.tar.gz
+mv jdk1.7.0_79 /usr/local/
 echo 'export JAVA_HOME=/usr/local/jdk1.7.0_79' >> /etc/profile
 echo 'export PATH=$JAVA_HOME/bin:$PATH' >> /etc/profile
 . /etc/profile
