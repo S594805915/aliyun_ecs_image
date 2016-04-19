@@ -3,6 +3,7 @@ aliyun-python-sdk-core==2.0.24
 aliyun-python-sdk-ecs==2.1.0
 appnope==0.1.0
 decorator==4.0.9
+Django==1.9.5
 ecdsa==0.13
 gnureadline==6.3.3
 ipython==4.1.1
@@ -15,5 +16,4 @@ ptyprocess==0.5.1
 pycrypto==2.6.1
 simplegeneric==0.8.1
 traitlets==4.1.0
-wheel==0.26.0
 xmltodict==0.10.1
