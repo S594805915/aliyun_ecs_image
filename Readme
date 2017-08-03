@@ -1,3 +1,0 @@
-1. 加入阿里云的accessid和accesskey到env.sh,并且指定模板所在region
-2. 使用"source env-demo.sh"导出accessid和accesskey到环境
-3. 模板创建采用bash shell

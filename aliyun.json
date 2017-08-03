@@ -1,0 +1,44 @@
+{
+  "variables": {
+    "access_key": "{{env `ALICLOUD_ACCESS_KEY`}}",
+    "secret_key": "{{env `ALICLOUD_SECRET_KEY`}}"
+  },
+  "builders": [{
+    "access_key":"{{user `access_key`}}",
+    "secret_key":"{{user `secret_key`}}",
+    "image_version": "0",
+    "image_name": "ubuntu16_04_{{user `image_version`}}",
+    "type":"alicloud-ecs",
+    "region":"cn-shenzhen",
+    "source_image":"ubuntu_16_0402_64_40G_alibase_20170711.vhd",
+    "ssh_username":"root",
+    "instance_type":"ecs.n1.medium",
+    "io_optimized":"true",
+    "image_force_delete":"true"
+  }],
+  "provisioners": [
+    {
+      "type": "file",
+      "source": "files/docker_daemon.json",
+      "destination": "/tmp/docker_daemon.json"
+    },
+    {
+      "type": "shell",
+      "inline": [
+        "curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -",
+        "echo deb [arch=amd64] https://download.docker.com/linux/ubuntu xenial stable > /etc/apt/sources.list.d/download_docker_com_linux_ubuntu.list",
+        "apt-get update",
+        "apt-get install -y telnet zip curl unzip git supervisor python-pip wget docker-ce=17.06.0~ce-0~ubuntu",
+        "pip install docker-py",
+        "wget http://xiaoer-packages.oss-cn-shenzhen.aliyuncs.com/jdk-8u77-linux-x64.tar.gz -O /usr/local/jdk-8u77-linux-x64.tar.gz",
+        "tar -xzvf /usr/local/jdk-8u77-linux-x64.tar.gz -C /usr/local/",
+        "echo JAVA_HOME=/usr/local/jdk1.8.0_77; export JAVA_HOME >> /etc/profile",
+        "echo PATH=$JAVA_HOME/bin:$PATH >> /etc/profile",
+        "mkdir -p /etc/docker",
+        "mv /tmp/docker_daemon.json /etc/docker/daemon.json",
+        "systemctl daemon-reload",
+        "systemctl restart docker"
+      ]
+    }
+  ]
+}
