@@ -1,0 +1,463 @@
+2017/08/03 15:27:20 [INFO] Packer version: 1.0.2
+2017/08/03 15:27:20 Packer Target OS/Arch: darwin amd64
+2017/08/03 15:27:20 Built with Go Version: go1.8.3
+2017/08/03 15:27:20 Detected home directory from env var: /Users/user
+2017/08/03 15:27:20 Using internal plugin for vmware-iso
+2017/08/03 15:27:20 Using internal plugin for amazon-ebssurrogate
+2017/08/03 15:27:20 Using internal plugin for azure-arm
+2017/08/03 15:27:20 Using internal plugin for googlecompute
+2017/08/03 15:27:20 Using internal plugin for hyperv-iso
+2017/08/03 15:27:20 Using internal plugin for oneandone
+2017/08/03 15:27:20 Using internal plugin for openstack
+2017/08/03 15:27:20 Using internal plugin for virtualbox-iso
+2017/08/03 15:27:20 Using internal plugin for amazon-ebsvolume
+2017/08/03 15:27:20 Using internal plugin for amazon-instance
+2017/08/03 15:27:20 Using internal plugin for docker
+2017/08/03 15:27:20 Using internal plugin for parallels-iso
+2017/08/03 15:27:20 Using internal plugin for profitbricks
+2017/08/03 15:27:20 Using internal plugin for virtualbox-ovf
+2017/08/03 15:27:20 Using internal plugin for vmware-vmx
+2017/08/03 15:27:20 Using internal plugin for amazon-chroot
+2017/08/03 15:27:20 Using internal plugin for amazon-ebs
+2017/08/03 15:27:20 Using internal plugin for cloudstack
+2017/08/03 15:27:20 Using internal plugin for digitalocean
+2017/08/03 15:27:20 Using internal plugin for file
+2017/08/03 15:27:20 Using internal plugin for triton
+2017/08/03 15:27:20 Using internal plugin for alicloud-ecs
+2017/08/03 15:27:20 Using internal plugin for null
+2017/08/03 15:27:20 Using internal plugin for parallels-pvm
+2017/08/03 15:27:20 Using internal plugin for qemu
+2017/08/03 15:27:20 Using internal plugin for chef-client
+2017/08/03 15:27:20 Using internal plugin for shell
+2017/08/03 15:27:20 Using internal plugin for windows-restart
+2017/08/03 15:27:20 Using internal plugin for ansible
+2017/08/03 15:27:20 Using internal plugin for file
+2017/08/03 15:27:20 Using internal plugin for puppet-masterless
+2017/08/03 15:27:20 Using internal plugin for puppet-server
+2017/08/03 15:27:20 Using internal plugin for salt-masterless
+2017/08/03 15:27:20 Using internal plugin for powershell
+2017/08/03 15:27:20 Using internal plugin for windows-shell
+2017/08/03 15:27:20 Using internal plugin for ansible-local
+2017/08/03 15:27:20 Using internal plugin for chef-solo
+2017/08/03 15:27:20 Using internal plugin for converge
+2017/08/03 15:27:20 Using internal plugin for shell-local
+2017/08/03 15:27:20 Using internal plugin for alicloud-import
+2017/08/03 15:27:20 Using internal plugin for checksum
+2017/08/03 15:27:20 Using internal plugin for docker-import
+2017/08/03 15:27:20 Using internal plugin for googlecompute-export
+2017/08/03 15:27:20 Using internal plugin for vagrant
+2017/08/03 15:27:20 Using internal plugin for amazon-import
+2017/08/03 15:27:20 Using internal plugin for artifice
+2017/08/03 15:27:20 Using internal plugin for atlas
+2017/08/03 15:27:20 Using internal plugin for docker-push
+2017/08/03 15:27:20 Using internal plugin for docker-tag
+2017/08/03 15:27:20 Using internal plugin for compress
+2017/08/03 15:27:20 Using internal plugin for shell-local
+2017/08/03 15:27:20 Using internal plugin for vsphere
+2017/08/03 15:27:20 Using internal plugin for docker-save
+2017/08/03 15:27:20 Using internal plugin for manifest
+2017/08/03 15:27:20 Using internal plugin for vagrant-cloud
+2017/08/03 15:27:20 Detected home directory from env var: /Users/user
+2017/08/03 15:27:20 Attempting to open config file: /Users/user/.packerconfig
+2017/08/03 15:27:20 [WARN] Config file doesn't exist: /Users/user/.packerconfig
+2017/08/03 15:27:20 Packer config: &{DisableCheckpoint:false DisableCheckpointSignature:false PluginMinPort:10000 PluginMaxPort:25000 Builders:map[oneandone:/Users/user/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-builder-oneandone openstack:/Users/user/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-builder-openstack amazon-ebsvolume:/Users/user/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-builder-amazon-ebsvolume digitalocean:/Users/user/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-builder-digitalocean vmware-iso:/Users/user/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-builder-vmware-iso amazon-instance:/Users/user/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-builder-amazon-instance parallels-iso:/Users/user/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-builder-parallels-iso amazon-chroot:/Users/user/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-builder-amazon-chroot file:/Users/user/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-builder-file hyperv-iso:/Users/user/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-builder-hyperv-iso virtualbox-iso:/Users/user/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-builder-virtualbox-iso virtualbox-ovf:/Users/user/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-builder-virtualbox-ovf vmware-vmx:/Users/user/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-builder-vmware-vmx amazon-ebs:/Users/user/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-builder-amazon-ebs triton:/Users/user/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-builder-triton amazon-ebssurrogate:/Users/user/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-builder-amazon-ebssurrogate azure-arm:/Users/user/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-builder-azure-arm googlecompute:/Users/user/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-builder-googlecompute docker:/Users/user/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-builder-docker profitbricks:/Users/user/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-builder-profitbricks cloudstack:/Users/user/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-builder-cloudstack alicloud-ecs:/Users/user/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-builder-alicloud-ecs null:/Users/user/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-builder-null parallels-pvm:/Users/user/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-builder-parallels-pvm qemu:/Users/user/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-builder-qemu] PostProcessors:map[amazon-import:/Users/user/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-post-processor-amazon-import artifice:/Users/user/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-post-processor-artifice manifest:/Users/user/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-post-processor-manifest vagrant-cloud:/Users/user/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-post-processor-vagrant-cloud alicloud-import:/Users/user/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-post-processor-alicloud-import googlecompute-export:/Users/user/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-post-processor-googlecompute-export docker-push:/Users/user/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-post-processor-docker-push docker-import:/Users/user/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-post-processor-docker-import vagrant:/Users/user/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-post-processor-vagrant shell-local:/Users/user/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-post-processor-shell-local vsphere:/Users/user/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-post-processor-vsphere docker-save:/Users/user/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-post-processor-docker-save checksum:/Users/user/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-post-processor-checksum atlas:/Users/user/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-post-processor-atlas docker-tag:/Users/user/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-post-processor-docker-tag compress:/Users/user/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-post-processor-compress] Provisioners:map[shell:/Users/user/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-provisioner-shell salt-masterless:/Users/user/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-provisioner-salt-masterless windows-restart:/Users/user/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-provisioner-windows-restart file:/Users/user/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-provisioner-file ansible-local:/Users/user/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-provisioner-ansible-local chef-solo:/Users/user/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-provisioner-chef-solo chef-client:/Users/user/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-provisioner-chef-client puppet-masterless:/Users/user/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-provisioner-puppet-masterless puppet-server:/Users/user/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-provisioner-puppet-server powershell:/Users/user/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-provisioner-powershell shell-local:/Users/user/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-provisioner-shell-local ansible:/Users/user/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-provisioner-ansible windows-shell:/Users/user/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-provisioner-windows-shell converge:/Users/user/bin/packer-PACKERSPACE-plugin-PACKERSPACE-packer-provisioner-converge]}
+2017/08/03 15:27:20 Detected home directory from env var: /Users/user
+2017/08/03 15:27:20 Setting cache directory: /Users/user/Projects/xiaoer/aliyun-ecs-tmpl/packer_cache
+2017/08/03 15:27:20 Detected home directory from env var: /Users/user
+2017/08/03 15:27:20 Loading builder: alicloud-ecs
+2017/08/03 15:27:20 Plugin could not be found. Checking same directory as executable.
+2017/08/03 15:27:20 Current exe path: /Users/user/bin/packer
+2017/08/03 15:27:20 Creating plugin client for path: /Users/user/bin/packer
+2017/08/03 15:27:20 Starting plugin: /Users/user/bin/packer []string{"/Users/user/bin/packer", "plugin", "packer-builder-alicloud-ecs"}
+2017/08/03 15:27:20 Waiting for RPC address for: /Users/user/bin/packer
+2017/08/03 15:27:20 packer: 2017/08/03 15:27:20 [INFO] Packer version: 1.0.2
+2017/08/03 15:27:20 packer: 2017/08/03 15:27:20 Packer Target OS/Arch: darwin amd64
+2017/08/03 15:27:20 packer: 2017/08/03 15:27:20 Built with Go Version: go1.8.3
+2017/08/03 15:27:20 packer: 2017/08/03 15:27:20 Detected home directory from env var: /Users/user
+2017/08/03 15:27:20 packer: 2017/08/03 15:27:20 Attempting to open config file: /Users/user/.packerconfig
+2017/08/03 15:27:20 packer: 2017/08/03 15:27:20 [WARN] Config file doesn't exist: /Users/user/.packerconfig
+2017/08/03 15:27:20 packer: 2017/08/03 15:27:20 Packer config: &{DisableCheckpoint:false DisableCheckpointSignature:false PluginMinPort:10000 PluginMaxPort:25000 Builders:map[] PostProcessors:map[] Provisioners:map[]}
+2017/08/03 15:27:20 packer: 2017/08/03 15:27:20 Detected home directory from env var: /Users/user
+2017/08/03 15:27:20 packer: 2017/08/03 15:27:20 Setting cache directory: /Users/user/Projects/xiaoer/aliyun-ecs-tmpl/packer_cache
+2017/08/03 15:27:20 packer: 2017/08/03 15:27:20 args: []string{"packer-builder-alicloud-ecs"}
+2017/08/03 15:27:20 packer: 2017/08/03 15:27:20 Plugin minimum port: 10000
+2017/08/03 15:27:20 packer: 2017/08/03 15:27:20 Plugin maximum port: 25000
+2017/08/03 15:27:20 packer: 2017/08/03 15:27:20 Detected home directory from env var: /Users/user
+2017/08/03 15:27:20 packer: 2017/08/03 15:27:20 Plugin address: unix /var/folders/ft/4bcr5lw16wl9d2jx97lk6l1c0000gn/T/packer-plugin828583019
+2017/08/03 15:27:20 packer: 2017/08/03 15:27:20 Waiting for connection...
+2017/08/03 15:27:20 packer: 2017/08/03 15:27:20 Serving a plugin connection...
+2017/08/03 15:27:20 Loading provisioner: file
+2017/08/03 15:27:20 Plugin could not be found. Checking same directory as executable.
+2017/08/03 15:27:20 Current exe path: /Users/user/bin/packer
+2017/08/03 15:27:20 Creating plugin client for path: /Users/user/bin/packer
+2017/08/03 15:27:20 Starting plugin: /Users/user/bin/packer []string{"/Users/user/bin/packer", "plugin", "packer-provisioner-file"}
+2017/08/03 15:27:20 Waiting for RPC address for: /Users/user/bin/packer
+2017/08/03 15:27:20 packer: 2017/08/03 15:27:20 [INFO] Packer version: 1.0.2
+2017/08/03 15:27:20 packer: 2017/08/03 15:27:20 Packer Target OS/Arch: darwin amd64
+2017/08/03 15:27:20 packer: 2017/08/03 15:27:20 Built with Go Version: go1.8.3
+2017/08/03 15:27:20 packer: 2017/08/03 15:27:20 Detected home directory from env var: /Users/user
+2017/08/03 15:27:20 packer: 2017/08/03 15:27:20 Attempting to open config file: /Users/user/.packerconfig
+2017/08/03 15:27:20 packer: 2017/08/03 15:27:20 [WARN] Config file doesn't exist: /Users/user/.packerconfig
+2017/08/03 15:27:20 packer: 2017/08/03 15:27:20 Packer config: &{DisableCheckpoint:false DisableCheckpointSignature:false PluginMinPort:10000 PluginMaxPort:25000 Builders:map[] PostProcessors:map[] Provisioners:map[]}
+2017/08/03 15:27:20 packer: 2017/08/03 15:27:20 Detected home directory from env var: /Users/user
+2017/08/03 15:27:20 packer: 2017/08/03 15:27:20 Setting cache directory: /Users/user/Projects/xiaoer/aliyun-ecs-tmpl/packer_cache
+2017/08/03 15:27:20 packer: 2017/08/03 15:27:20 args: []string{"packer-provisioner-file"}
+2017/08/03 15:27:20 packer: 2017/08/03 15:27:20 Plugin minimum port: 10000
+2017/08/03 15:27:20 packer: 2017/08/03 15:27:20 Plugin maximum port: 25000
+2017/08/03 15:27:20 packer: 2017/08/03 15:27:20 Detected home directory from env var: /Users/user
+2017/08/03 15:27:20 packer: 2017/08/03 15:27:20 Plugin address: unix /var/folders/ft/4bcr5lw16wl9d2jx97lk6l1c0000gn/T/packer-plugin492961414
+2017/08/03 15:27:20 packer: 2017/08/03 15:27:20 Waiting for connection...
+2017/08/03 15:27:20 packer: 2017/08/03 15:27:20 Serving a plugin connection...
+2017/08/03 15:27:20 Loading provisioner: shell
+2017/08/03 15:27:20 Plugin could not be found. Checking same directory as executable.
+2017/08/03 15:27:20 Current exe path: /Users/user/bin/packer
+2017/08/03 15:27:20 Creating plugin client for path: /Users/user/bin/packer
+2017/08/03 15:27:20 Starting plugin: /Users/user/bin/packer []string{"/Users/user/bin/packer", "plugin", "packer-provisioner-shell"}
+2017/08/03 15:27:20 Waiting for RPC address for: /Users/user/bin/packer
+2017/08/03 15:27:20 packer: 2017/08/03 15:27:20 [INFO] Packer version: 1.0.2
+2017/08/03 15:27:20 packer: 2017/08/03 15:27:20 Packer Target OS/Arch: darwin amd64
+2017/08/03 15:27:20 packer: 2017/08/03 15:27:20 Built with Go Version: go1.8.3
+2017/08/03 15:27:20 packer: 2017/08/03 15:27:20 Detected home directory from env var: /Users/user
+2017/08/03 15:27:20 packer: 2017/08/03 15:27:20 Attempting to open config file: /Users/user/.packerconfig
+2017/08/03 15:27:20 packer: 2017/08/03 15:27:20 [WARN] Config file doesn't exist: /Users/user/.packerconfig
+2017/08/03 15:27:20 packer: 2017/08/03 15:27:20 Packer config: &{DisableCheckpoint:false DisableCheckpointSignature:false PluginMinPort:10000 PluginMaxPort:25000 Builders:map[] PostProcessors:map[] Provisioners:map[]}
+2017/08/03 15:27:20 packer: 2017/08/03 15:27:20 Detected home directory from env var: /Users/user
+2017/08/03 15:27:20 packer: 2017/08/03 15:27:20 Setting cache directory: /Users/user/Projects/xiaoer/aliyun-ecs-tmpl/packer_cache
+2017/08/03 15:27:20 packer: 2017/08/03 15:27:20 args: []string{"packer-provisioner-shell"}
+2017/08/03 15:27:20 packer: 2017/08/03 15:27:20 Plugin minimum port: 10000
+2017/08/03 15:27:20 packer: 2017/08/03 15:27:20 Plugin maximum port: 25000
+2017/08/03 15:27:20 packer: 2017/08/03 15:27:20 Detected home directory from env var: /Users/user
+2017/08/03 15:27:20 packer: 2017/08/03 15:27:20 Plugin address: unix /var/folders/ft/4bcr5lw16wl9d2jx97lk6l1c0000gn/T/packer-plugin467070183
+2017/08/03 15:27:20 packer: 2017/08/03 15:27:20 Waiting for connection...
+2017/08/03 15:27:20 packer: 2017/08/03 15:27:20 Serving a plugin connection...
+2017/08/03 15:27:20 ui: [1;32malicloud-ecs output will be in this color.[0m
+2017/08/03 15:27:20 ui: 
+2017/08/03 15:27:20 Build debug mode: false
+2017/08/03 15:27:20 Force build: false
+2017/08/03 15:27:20 On error: 
+2017/08/03 15:27:20 Preparing build: alicloud-ecs
+2017/08/03 15:27:20 packer: 2017/08/03 15:27:20 Config: {PackerConfig:{PackerBuildName:alicloud-ecs PackerBuilderType:alicloud-ecs PackerDebug:false PackerForce:false PackerOnError: PackerUserVars:map[image_version:20170803152720 access_key:<Filtered> secret_key:<Filtered>]} AlicloudAccessConfig:{AlicloudAccessKey:<Filtered> AlicloudSecretKey:<Filtered> AlicloudRegion:cn-shenzhen AlicloudSkipValidation:false} AlicloudImageConfig:{AlicloudImageName:ubuntu16_04_20170803152720 AlicloudImageVersion:0 AlicloudImageDescription: AlicloudImageShareAccounts:[] AlicloudImageUNShareAccounts:[] AlicloudImageDestinationRegions:[] AlicloudImageDestinationNames:[] AlicloudImageForceDetele:true AlicloudImageForceDeteleSnapshots:false AlicloudImageForceDeleteInstances:false AlicloudImageSkipRegionValidation:false AlicloudDiskDevices:{ECSImagesDiskMappings:[]}} RunConfig:{AssociatePublicIpAddress:false ZoneId: IOOptimized:true InstanceType:ecs.n1.medium Description: AlicloudSourceImage:ubuntu_16_0402_64_40G_alibase_20170711.vhd ForceStopInstance:false SecurityGroupId: SecurityGroupName: UserData: UserDataFile: VpcId: VpcName: CidrBlock: VSwitchId: VSwitchName: InstanceName: InternetChargeType: InternetMaxBandwidthOut:0 TemporaryKeyPairName:packer_5982d058-0dcb-85ed-2baf-b77365910715 Comm:{Type:ssh SSHHost: SSHPort:22 SSHUsername:root SSHPassword: SSHPrivateKey: SSHPty:false SSHTimeout:5m0s SSHAgentAuth:false SSHDisableAgent:false SSHHandshakeAttempts:10 SSHBastionHost: SSHBastionPort:0 SSHBastionAgentAuth:false SSHBastionUsername: SSHBastionPassword: SSHBastionPrivateKey: SSHFileTransferMethod:scp WinRMUser: WinRMPassword: WinRMHost: WinRMPort:0 WinRMTimeout:0s WinRMUseSSL:false WinRMInsecure:false WinRMUseNTLM:false WinRMTransportDecorator:<nil>} SSHKeyPairName: SSHPrivateIp:false} ctx:{Data:<nil> Funcs:map[] UserVariables:map[image_version:20170803152720 access_key:<Filtered> secret_key:<Filtered>] EnableEnv:true BuildName:alicloud-ecs BuildType:alicloud-ecs TemplatePath:/Users/user/Projects/xiaoer/aliyun-ecs-tmpl/aliyun.json}}
+2017/08/03 15:27:20 Waiting on builds to complete...
+2017/08/03 15:27:20 Starting build run: alicloud-ecs
+2017/08/03 15:27:20 Running builder: alicloud-ecs
+2017/08/03 15:27:20 [INFO] (telemetry) Starting builder alicloud-ecs
+2017/08/03 15:27:21 ui: [1;32m==> alicloud-ecs: Force delete flag found, skipping prevalidating image name.[0m
+2017/08/03 15:27:21 ui: [0;32m    alicloud-ecs: Found image ID: ubuntu_16_0402_64_40G_alibase_20170711.vhd[0m
+2017/08/03 15:27:21 ui: [1;32m==> alicloud-ecs: Creating temporary keypair: packer_5982d058-0dcb-85ed-2baf-b77365910715[0m
+2017/08/03 15:27:22 ui: [1;32m==> alicloud-ecs: Creating vpc[0m
+2017/08/03 15:27:34 ui: [1;32m==> alicloud-ecs: Creating vswitch...[0m
+2017/08/03 15:27:45 ui: [1;32m==> alicloud-ecs: Creating security groups...[0m
+2017/08/03 15:27:47 ui: [1;32m==> alicloud-ecs: Creating instance.[0m
+2017/08/03 15:27:47 packer: 2017/08/03 15:27:47
+2017/08/03 15:28:06 ui: [1;32m==> alicloud-ecs: Allocating eip[0m
+2017/08/03 15:28:13 ui: [1;32m==> alicloud-ecs: Allocated eip 39.108.102.188[0m
+2017/08/03 15:28:13 ui: [1;32m==> alicloud-ecs: Starting instance.[0m
+2017/08/03 15:28:38 ui: [0;32m    alicloud-ecs: Attach keypair packer_5982d058-0dcb-85ed-2baf-b77365910715 to instance: i-wz93uxbb9zm8pmhkbosg[0m
+2017/08/03 15:28:38 packer: 2017/08/03 15:28:38 [INFO] Waiting for SSH, up to timeout: 5m0s
+2017/08/03 15:28:38 ui: [1;32m==> alicloud-ecs: Waiting for SSH to become available...[0m
+2017/08/03 15:28:38 packer: 2017/08/03 15:28:38 [INFO] Attempting SSH connection...
+2017/08/03 15:28:38 packer: 2017/08/03 15:28:38 reconnecting to TCP connection for SSH
+2017/08/03 15:28:38 packer: 2017/08/03 15:28:38 handshaking with SSH
+2017/08/03 15:28:38 packer: 2017/08/03 15:28:38 handshake complete!
+2017/08/03 15:28:38 packer: 2017/08/03 15:28:38 opening new ssh session
+2017/08/03 15:28:38 packer: 2017/08/03 15:28:38 [INFO] agent forwarding enabled
+2017/08/03 15:28:38 ui: [1;32m==> alicloud-ecs: Connected to SSH![0m
+2017/08/03 15:28:38 packer: 2017/08/03 15:28:38 Running the provision hook
+2017/08/03 15:28:38 [INFO] (telemetry) Starting provisioner file
+2017/08/03 15:28:38 ui: [1;32m==> alicloud-ecs: Uploading files/docker_daemon.json => /tmp/docker_daemon.json[0m
+2017/08/03 15:28:38 packer: 2017/08/03 15:28:38 [INFO] 74 bytes written for 'uploadData'
+2017/08/03 15:28:38 [INFO] 74 bytes written for 'uploadData'
+2017/08/03 15:28:38 packer: 2017/08/03 15:28:38 opening new ssh session
+2017/08/03 15:28:38 packer: 2017/08/03 15:28:38 Starting remote scp process:  scp -vt /tmp
+2017/08/03 15:28:39 packer: 2017/08/03 15:28:39 Started SCP session, beginning transfers...
+2017/08/03 15:28:39 packer: 2017/08/03 15:28:39 [DEBUG] scp: Uploading docker_daemon.json: perms=C0644 size=74
+2017/08/03 15:28:39 packer: 2017/08/03 15:28:39 SCP session complete, closing stdin pipe.
+2017/08/03 15:28:39 packer: 2017/08/03 15:28:39 Waiting for SSH session to complete.
+2017/08/03 15:28:39 packer: 2017/08/03 15:28:39 scp stderr (length 34): Sink: C0644 74 docker_daemon.json
+2017/08/03 15:28:39 [INFO] (telemetry) ending file
+2017/08/03 15:28:39 [INFO] (telemetry) Starting provisioner shell
+2017/08/03 15:28:39 ui: [1;32m==> alicloud-ecs: Provisioning with shell script: /var/folders/ft/4bcr5lw16wl9d2jx97lk6l1c0000gn/T/packer-shell800144154[0m
+2017/08/03 15:28:39 packer: 2017/08/03 15:28:39 Opening /var/folders/ft/4bcr5lw16wl9d2jx97lk6l1c0000gn/T/packer-shell800144154 for reading
+2017/08/03 15:28:39 packer: 2017/08/03 15:28:39 [INFO] 795 bytes written for 'uploadData'
+2017/08/03 15:28:39 packer: 2017/08/03 15:28:39 opening new ssh session
+2017/08/03 15:28:39 [INFO] 795 bytes written for 'uploadData'
+2017/08/03 15:28:39 packer: 2017/08/03 15:28:39 Starting remote scp process:  scp -vt /tmp
+2017/08/03 15:28:39 packer: 2017/08/03 15:28:39 Started SCP session, beginning transfers...
+2017/08/03 15:28:39 packer: 2017/08/03 15:28:39 Copying input data into temporary file so we can read the length
+2017/08/03 15:28:39 packer: 2017/08/03 15:28:39 [DEBUG] scp: Uploading script_7080.sh: perms=C0644 size=795
+2017/08/03 15:28:39 packer: 2017/08/03 15:28:39 SCP session complete, closing stdin pipe.
+2017/08/03 15:28:39 packer: 2017/08/03 15:28:39 Waiting for SSH session to complete.
+2017/08/03 15:28:39 packer: 2017/08/03 15:28:39 scp stderr (length 31): Sink: C0644 795 script_7080.sh
+2017/08/03 15:28:39 packer: 2017/08/03 15:28:39 opening new ssh session
+2017/08/03 15:28:39 packer: 2017/08/03 15:28:39 starting remote command: chmod 0755 /tmp/script_7080.sh
+2017/08/03 15:28:39 packer: 2017/08/03 15:28:39 [INFO] RPC endpoint: Communicator ended with: 0
+2017/08/03 15:28:39 [INFO] RPC client: Communicator ended with: 0
+2017/08/03 15:28:39 [INFO] RPC endpoint: Communicator ended with: 0
+2017/08/03 15:28:39 packer: 2017/08/03 15:28:39 [INFO] RPC client: Communicator ended with: 0
+2017/08/03 15:28:39 packer: 2017/08/03 15:28:39 opening new ssh session
+2017/08/03 15:28:39 packer: 2017/08/03 15:28:39 starting remote command: chmod +x /tmp/script_7080.sh; PACKER_BUILDER_TYPE='alicloud-ecs' PACKER_BUILD_NAME='alicloud-ecs'  /tmp/script_7080.sh
+2017/08/03 15:28:39 ui: [0;32m    alicloud-ecs: sudo: unable to resolve host iZwz93uxbb9zm8pmhkbosgZ[0m
+2017/08/03 15:28:42 ui: [0;32m    alicloud-ecs: OK[0m
+2017/08/03 15:28:42 ui: [0;32m    alicloud-ecs: Get:1 http://mirrors.cloud.aliyuncs.com/ubuntu xenial InRelease [247 kB][0m
+2017/08/03 15:28:42 ui: [0;32m    alicloud-ecs: Get:2 http://mirrors.cloud.aliyuncs.com/ubuntu xenial-updates InRelease [102 kB][0m
+2017/08/03 15:28:42 ui: [0;32m    alicloud-ecs: Get:3 http://mirrors.cloud.aliyuncs.com/ubuntu xenial-security InRelease [102 kB][0m
+2017/08/03 15:28:43 ui: [0;32m    alicloud-ecs: Get:4 http://mirrors.cloud.aliyuncs.com/ubuntu xenial/main Sources [868 kB][0m
+2017/08/03 15:28:43 ui: [0;32m    alicloud-ecs: Get:5 https://download.docker.com/linux/ubuntu xenial InRelease [38.9 kB][0m
+2017/08/03 15:28:43 ui: [0;32m    alicloud-ecs: Get:6 http://mirrors.cloud.aliyuncs.com/ubuntu xenial/universe Sources [7,728 kB][0m
+2017/08/03 15:28:44 ui: [0;32m    alicloud-ecs: Get:7 https://download.docker.com/linux/ubuntu xenial/stable amd64 Packages [1,966 B][0m
+2017/08/03 15:28:44 ui: [0;32m    alicloud-ecs: Get:8 http://mirrors.cloud.aliyuncs.com/ubuntu xenial/main amd64 Packages [1,201 kB][0m
+2017/08/03 15:28:44 ui: [0;32m    alicloud-ecs: Get:9 http://mirrors.cloud.aliyuncs.com/ubuntu xenial/main i386 Packages [1,196 kB][0m
+2017/08/03 15:28:44 ui: [0;32m    alicloud-ecs: Get:10 http://mirrors.cloud.aliyuncs.com/ubuntu xenial/main Translation-en [568 kB][0m
+2017/08/03 15:28:44 ui: [0;32m    alicloud-ecs: Get:11 http://mirrors.cloud.aliyuncs.com/ubuntu xenial/universe amd64 Packages [7,532 kB][0m
+2017/08/03 15:28:46 ui: [0;32m    alicloud-ecs: Get:12 http://mirrors.cloud.aliyuncs.com/ubuntu xenial/universe i386 Packages [7,512 kB][0m
+2017/08/03 15:28:47 ui: [0;32m    alicloud-ecs: Get:13 http://mirrors.cloud.aliyuncs.com/ubuntu xenial/universe Translation-en [4,354 kB][0m
+2017/08/03 15:28:48 ui: [0;32m    alicloud-ecs: Get:14 http://mirrors.cloud.aliyuncs.com/ubuntu xenial-updates/main Sources [265 kB][0m
+2017/08/03 15:28:48 ui: [0;32m    alicloud-ecs: Get:15 http://mirrors.cloud.aliyuncs.com/ubuntu xenial-updates/universe Sources [166 kB][0m
+2017/08/03 15:28:48 ui: [0;32m    alicloud-ecs: Ign:16 http://mirrors.cloud.aliyuncs.com/ubuntu xenial-updates/main amd64 Packages[0m
+2017/08/03 15:28:48 ui: [0;32m    alicloud-ecs: Ign:17 http://mirrors.cloud.aliyuncs.com/ubuntu xenial-updates/main i386 Packages[0m
+2017/08/03 15:28:48 ui: [0;32m    alicloud-ecs: Get:18 http://mirrors.cloud.aliyuncs.com/ubuntu xenial-updates/main Translation-en [240 kB][0m
+2017/08/03 15:28:48 ui: [0;32m    alicloud-ecs: Ign:19 http://mirrors.cloud.aliyuncs.com/ubuntu xenial-updates/universe amd64 Packages[0m
+2017/08/03 15:28:48 ui: [0;32m    alicloud-ecs: Ign:20 http://mirrors.cloud.aliyuncs.com/ubuntu xenial-updates/universe i386 Packages[0m
+2017/08/03 15:28:48 ui: [0;32m    alicloud-ecs: Get:21 http://mirrors.cloud.aliyuncs.com/ubuntu xenial-updates/universe Translation-en [198 kB][0m
+2017/08/03 15:28:48 ui: [0;32m    alicloud-ecs: Get:22 http://mirrors.cloud.aliyuncs.com/ubuntu xenial-security/main Sources [82.9 kB][0m
+2017/08/03 15:28:48 ui: [0;32m    alicloud-ecs: Get:23 http://mirrors.cloud.aliyuncs.com/ubuntu xenial-security/universe Sources [36.6 kB][0m
+2017/08/03 15:28:48 ui: [0;32m    alicloud-ecs: Get:24 http://mirrors.cloud.aliyuncs.com/ubuntu xenial-security/main amd64 Packages [316 kB][0m
+2017/08/03 15:28:48 ui: [0;32m    alicloud-ecs: Get:25 http://mirrors.cloud.aliyuncs.com/ubuntu xenial-security/main i386 Packages [298 kB][0m
+2017/08/03 15:28:48 ui: [0;32m    alicloud-ecs: Get:26 http://mirrors.cloud.aliyuncs.com/ubuntu xenial-security/main Translation-en [133 kB][0m
+2017/08/03 15:28:48 ui: [0;32m    alicloud-ecs: Get:27 http://mirrors.cloud.aliyuncs.com/ubuntu xenial-security/universe amd64 Packages [149 kB][0m
+2017/08/03 15:28:48 ui: [0;32m    alicloud-ecs: Get:28 http://mirrors.cloud.aliyuncs.com/ubuntu xenial-security/universe i386 Packages [133 kB][0m
+2017/08/03 15:28:48 ui: [0;32m    alicloud-ecs: Get:29 http://mirrors.cloud.aliyuncs.com/ubuntu xenial-security/universe Translation-en [77.0 kB][0m
+2017/08/03 15:28:48 ui: [0;32m    alicloud-ecs: Get:16 http://mirrors.cloud.aliyuncs.com/ubuntu xenial-updates/main amd64 Packages [593 kB][0m
+2017/08/03 15:28:49 ui: [0;32m    alicloud-ecs: Get:17 http://mirrors.cloud.aliyuncs.com/ubuntu xenial-updates/main i386 Packages [573 kB][0m
+2017/08/03 15:28:49 ui: [0;32m    alicloud-ecs: Get:19 http://mirrors.cloud.aliyuncs.com/ubuntu xenial-updates/universe amd64 Packages [510 kB][0m
+2017/08/03 15:28:49 ui: [0;32m    alicloud-ecs: Get:20 http://mirrors.cloud.aliyuncs.com/ubuntu xenial-updates/universe i386 Packages [493 kB][0m
+2017/08/03 15:28:50 ui: [0;32m    alicloud-ecs: Fetched 35.7 MB in 7s (4,772 kB/s)[0m
+2017/08/03 15:28:51 ui: [0;32m    alicloud-ecs: Reading package lists...[0m
+2017/08/03 15:28:51 ui: [0;32m    alicloud-ecs: Reading package lists...[0m
+2017/08/03 15:28:51 ui: [0;32m    alicloud-ecs: Building dependency tree...[0m
+2017/08/03 15:28:51 ui: [0;32m    alicloud-ecs: Reading state information...[0m
+2017/08/03 15:28:51 ui: [0;32m    alicloud-ecs: telnet is already the newest version (0.17-40).[0m
+2017/08/03 15:28:51 ui: [0;32m    alicloud-ecs: curl is already the newest version (7.47.0-1ubuntu2.2).[0m
+2017/08/03 15:28:51 ui: [0;32m    alicloud-ecs: wget is already the newest version (1.17.1-1ubuntu1.2).[0m
+2017/08/03 15:28:51 ui: [0;32m    alicloud-ecs: python-pip is already the newest version (8.1.1-2ubuntu0.4).[0m
+2017/08/03 15:28:51 ui: [0;32m    alicloud-ecs: The following additional packages will be installed:[0m
+2017/08/03 15:28:51 ui: [0;32m    alicloud-ecs: aufs-tools cgroupfs-mount git-man liberror-perl libltdl7 python-meld3[0m
+2017/08/03 15:28:51 ui: [0;32m    alicloud-ecs: Suggested packages:[0m
+2017/08/03 15:28:51 ui: [0;32m    alicloud-ecs: mountall git-daemon-run | git-daemon-sysvinit git-doc git-el git-email[0m
+2017/08/03 15:28:51 ui: [0;32m    alicloud-ecs: git-gui gitk gitweb git-arch git-cvs git-mediawiki git-svn supervisor-doc[0m
+2017/08/03 15:28:51 ui: [0;32m    alicloud-ecs: The following NEW packages will be installed:[0m
+2017/08/03 15:28:51 ui: [0;32m    alicloud-ecs: aufs-tools cgroupfs-mount docker-ce git git-man liberror-perl libltdl7[0m
+2017/08/03 15:28:51 ui: [0;32m    alicloud-ecs: python-meld3 supervisor unzip zip[0m
+2017/08/03 15:28:52 ui: [0;32m    alicloud-ecs: 0 upgraded, 11 newly installed, 0 to remove and 34 not upgraded.[0m
+2017/08/03 15:28:52 ui: [0;32m    alicloud-ecs: Need to get 25.0 MB of archives.[0m
+2017/08/03 15:28:52 ui: [0;32m    alicloud-ecs: After this operation, 125 MB of additional disk space will be used.[0m
+2017/08/03 15:28:52 ui: [0;32m    alicloud-ecs: Get:1 http://mirrors.cloud.aliyuncs.com/ubuntu xenial/universe amd64 aufs-tools amd64 1:3.2+20130722-1.1ubuntu1 [92.9 kB][0m
+2017/08/03 15:28:52 ui: [0;32m    alicloud-ecs: Get:2 http://mirrors.cloud.aliyuncs.com/ubuntu xenial/universe amd64 cgroupfs-mount all 1.2 [4,970 B][0m
+2017/08/03 15:28:52 ui: [0;32m    alicloud-ecs: Get:3 http://mirrors.cloud.aliyuncs.com/ubuntu xenial/main amd64 libltdl7 amd64 2.4.6-0.1 [38.3 kB][0m
+2017/08/03 15:28:52 ui: [0;32m    alicloud-ecs: Get:4 http://mirrors.cloud.aliyuncs.com/ubuntu xenial/main amd64 liberror-perl all 0.17-1.2 [19.6 kB][0m
+2017/08/03 15:28:52 ui: [0;32m    alicloud-ecs: Get:5 http://mirrors.cloud.aliyuncs.com/ubuntu xenial-updates/main amd64 git-man all 1:2.7.4-0ubuntu1.1 [735 kB][0m
+2017/08/03 15:28:52 ui: [0;32m    alicloud-ecs: Get:6 http://mirrors.cloud.aliyuncs.com/ubuntu xenial-updates/main amd64 git amd64 1:2.7.4-0ubuntu1.1 [3,068 kB][0m
+2017/08/03 15:28:54 ui: [0;32m    alicloud-ecs: Get:7 http://mirrors.cloud.aliyuncs.com/ubuntu xenial/main amd64 unzip amd64 6.0-20ubuntu1 [158 kB][0m
+2017/08/03 15:28:54 ui: [0;32m    alicloud-ecs: Get:8 http://mirrors.cloud.aliyuncs.com/ubuntu xenial/main amd64 zip amd64 3.0-11 [158 kB][0m
+2017/08/03 15:28:54 ui: [0;32m    alicloud-ecs: Get:9 http://mirrors.cloud.aliyuncs.com/ubuntu xenial/universe amd64 python-meld3 all 1.0.2-2 [30.9 kB][0m
+2017/08/03 15:28:54 ui: [0;32m    alicloud-ecs: Get:10 http://mirrors.cloud.aliyuncs.com/ubuntu xenial-updates/universe amd64 supervisor all 3.2.0-2ubuntu0.1 [253 kB][0m
+2017/08/03 15:28:57 ui: [0;32m    alicloud-ecs: Get:11 https://download.docker.com/linux/ubuntu xenial/stable amd64 docker-ce amd64 17.06.0~ce-0~ubuntu [20.5 MB][0m
+2017/08/03 15:29:58 packer: 2017/08/03 15:29:58 Remote command exited without exit status or exit signal.
+2017/08/03 15:29:58 packer: 2017/08/03 15:29:58 [INFO] RPC endpoint: Communicator ended with: 2300218
+2017/08/03 15:29:58 [INFO] 5058 bytes written for 'stdout'
+2017/08/03 15:29:58 [INFO] 53 bytes written for 'stderr'
+2017/08/03 15:29:58 [INFO] RPC client: Communicator ended with: 2300218
+2017/08/03 15:29:58 [INFO] RPC endpoint: Communicator ended with: 2300218
+2017/08/03 15:29:58 packer: 2017/08/03 15:29:58 [INFO] 53 bytes written for 'stderr'
+2017/08/03 15:29:58 packer: 2017/08/03 15:29:58 [INFO] 5058 bytes written for 'stdout'
+2017/08/03 15:29:58 packer: 2017/08/03 15:29:58 [INFO] RPC client: Communicator ended with: 2300218
+2017/08/03 15:29:58 packer: 2017/08/03 15:29:58 opening new ssh session
+2017/08/03 15:29:58 packer: 2017/08/03 15:29:58 ssh session open error: 'read tcp 10.8.10.183:49627->39.108.102.188:22: read: operation timed out', attempting reconnect
+2017/08/03 15:29:58 packer: 2017/08/03 15:29:58 reconnecting to TCP connection for SSH
+2017/08/03 15:30:09 packer: 2017/08/03 15:30:09 reconnection error: dial tcp 39.108.102.188:22: getsockopt: operation timed out
+2017/08/03 15:30:09 packer: 2017/08/03 15:30:09 Retryable error: Error removing temporary script at /tmp/script_7080.sh: dial tcp 39.108.102.188:22: getsockopt: operation timed out
+2017/08/03 15:30:11 packer: 2017/08/03 15:30:11 opening new ssh session
+2017/08/03 15:30:11 packer: 2017/08/03 15:30:11 ssh session open error: 'client not available', attempting reconnect
+2017/08/03 15:30:11 packer: 2017/08/03 15:30:11 reconnecting to TCP connection for SSH
+2017/08/03 15:30:22 packer: 2017/08/03 15:30:22 reconnection error: dial tcp 39.108.102.188:22: getsockopt: operation timed out
+2017/08/03 15:30:22 packer: 2017/08/03 15:30:22 Retryable error: Error removing temporary script at /tmp/script_7080.sh: dial tcp 39.108.102.188:22: getsockopt: operation timed out
+2017/08/03 15:30:24 packer: 2017/08/03 15:30:24 opening new ssh session
+2017/08/03 15:30:24 packer: 2017/08/03 15:30:24 ssh session open error: 'client not available', attempting reconnect
+2017/08/03 15:30:24 packer: 2017/08/03 15:30:24 reconnecting to TCP connection for SSH
+2017/08/03 15:30:34 packer: 2017/08/03 15:30:34 reconnection error: dial tcp 39.108.102.188:22: getsockopt: operation timed out
+2017/08/03 15:30:34 packer: 2017/08/03 15:30:34 Retryable error: Error removing temporary script at /tmp/script_7080.sh: dial tcp 39.108.102.188:22: getsockopt: operation timed out
+2017/08/03 15:30:36 packer: 2017/08/03 15:30:36 opening new ssh session
+2017/08/03 15:30:36 packer: 2017/08/03 15:30:36 ssh session open error: 'client not available', attempting reconnect
+2017/08/03 15:30:36 packer: 2017/08/03 15:30:36 reconnecting to TCP connection for SSH
+2017/08/03 15:30:47 packer: 2017/08/03 15:30:47 reconnection error: dial tcp 39.108.102.188:22: getsockopt: operation timed out
+2017/08/03 15:30:47 packer: 2017/08/03 15:30:47 Retryable error: Error removing temporary script at /tmp/script_7080.sh: dial tcp 39.108.102.188:22: getsockopt: operation timed out
+2017/08/03 15:30:49 packer: 2017/08/03 15:30:49 opening new ssh session
+2017/08/03 15:30:49 packer: 2017/08/03 15:30:49 ssh session open error: 'client not available', attempting reconnect
+2017/08/03 15:30:49 packer: 2017/08/03 15:30:49 reconnecting to TCP connection for SSH
+2017/08/03 15:31:00 packer: 2017/08/03 15:31:00 reconnection error: dial tcp 39.108.102.188:22: getsockopt: operation timed out
+2017/08/03 15:31:00 packer: 2017/08/03 15:31:00 Retryable error: Error removing temporary script at /tmp/script_7080.sh: dial tcp 39.108.102.188:22: getsockopt: operation timed out
+2017/08/03 15:31:02 packer: 2017/08/03 15:31:02 opening new ssh session
+2017/08/03 15:31:02 packer: 2017/08/03 15:31:02 ssh session open error: 'client not available', attempting reconnect
+2017/08/03 15:31:02 packer: 2017/08/03 15:31:02 reconnecting to TCP connection for SSH
+2017/08/03 15:31:13 packer: 2017/08/03 15:31:13 reconnection error: dial tcp 39.108.102.188:22: getsockopt: operation timed out
+2017/08/03 15:31:13 packer: 2017/08/03 15:31:13 Retryable error: Error removing temporary script at /tmp/script_7080.sh: dial tcp 39.108.102.188:22: getsockopt: operation timed out
+2017/08/03 15:31:15 packer: 2017/08/03 15:31:15 opening new ssh session
+2017/08/03 15:31:15 packer: 2017/08/03 15:31:15 ssh session open error: 'client not available', attempting reconnect
+2017/08/03 15:31:15 packer: 2017/08/03 15:31:15 reconnecting to TCP connection for SSH
+2017/08/03 15:31:26 packer: 2017/08/03 15:31:26 reconnection error: dial tcp 39.108.102.188:22: getsockopt: operation timed out
+2017/08/03 15:31:26 packer: 2017/08/03 15:31:26 Retryable error: Error removing temporary script at /tmp/script_7080.sh: dial tcp 39.108.102.188:22: getsockopt: operation timed out
+2017/08/03 15:31:28 packer: 2017/08/03 15:31:28 opening new ssh session
+2017/08/03 15:31:28 packer: 2017/08/03 15:31:28 ssh session open error: 'client not available', attempting reconnect
+2017/08/03 15:31:28 packer: 2017/08/03 15:31:28 reconnecting to TCP connection for SSH
+2017/08/03 15:31:38 packer: 2017/08/03 15:31:38 reconnection error: dial tcp 39.108.102.188:22: getsockopt: operation timed out
+2017/08/03 15:31:38 packer: 2017/08/03 15:31:38 Retryable error: Error removing temporary script at /tmp/script_7080.sh: dial tcp 39.108.102.188:22: getsockopt: operation timed out
+2017/08/03 15:31:40 packer: 2017/08/03 15:31:40 opening new ssh session
+2017/08/03 15:31:40 packer: 2017/08/03 15:31:40 ssh session open error: 'client not available', attempting reconnect
+2017/08/03 15:31:40 packer: 2017/08/03 15:31:40 reconnecting to TCP connection for SSH
+2017/08/03 15:31:51 packer: 2017/08/03 15:31:51 reconnection error: dial tcp 39.108.102.188:22: getsockopt: operation timed out
+2017/08/03 15:31:51 packer: 2017/08/03 15:31:51 Retryable error: Error removing temporary script at /tmp/script_7080.sh: dial tcp 39.108.102.188:22: getsockopt: operation timed out
+2017/08/03 15:31:53 packer: 2017/08/03 15:31:53 opening new ssh session
+2017/08/03 15:31:53 packer: 2017/08/03 15:31:53 ssh session open error: 'client not available', attempting reconnect
+2017/08/03 15:31:53 packer: 2017/08/03 15:31:53 reconnecting to TCP connection for SSH
+2017/08/03 15:32:04 packer: 2017/08/03 15:32:04 reconnection error: dial tcp 39.108.102.188:22: getsockopt: operation timed out
+2017/08/03 15:32:04 packer: 2017/08/03 15:32:04 Retryable error: Error removing temporary script at /tmp/script_7080.sh: dial tcp 39.108.102.188:22: getsockopt: operation timed out
+2017/08/03 15:32:06 packer: 2017/08/03 15:32:06 opening new ssh session
+2017/08/03 15:32:06 packer: 2017/08/03 15:32:06 ssh session open error: 'client not available', attempting reconnect
+2017/08/03 15:32:06 packer: 2017/08/03 15:32:06 reconnecting to TCP connection for SSH
+2017/08/03 15:32:17 packer: 2017/08/03 15:32:17 reconnection error: dial tcp 39.108.102.188:22: getsockopt: operation timed out
+2017/08/03 15:32:17 packer: 2017/08/03 15:32:17 Retryable error: Error removing temporary script at /tmp/script_7080.sh: dial tcp 39.108.102.188:22: getsockopt: operation timed out
+2017/08/03 15:32:19 packer: 2017/08/03 15:32:19 opening new ssh session
+2017/08/03 15:32:19 packer: 2017/08/03 15:32:19 ssh session open error: 'client not available', attempting reconnect
+2017/08/03 15:32:19 packer: 2017/08/03 15:32:19 reconnecting to TCP connection for SSH
+2017/08/03 15:32:30 packer: 2017/08/03 15:32:30 reconnection error: dial tcp 39.108.102.188:22: getsockopt: operation timed out
+2017/08/03 15:32:30 packer: 2017/08/03 15:32:30 Retryable error: Error removing temporary script at /tmp/script_7080.sh: dial tcp 39.108.102.188:22: getsockopt: operation timed out
+2017/08/03 15:32:32 packer: 2017/08/03 15:32:32 opening new ssh session
+2017/08/03 15:32:32 packer: 2017/08/03 15:32:32 ssh session open error: 'client not available', attempting reconnect
+2017/08/03 15:32:32 packer: 2017/08/03 15:32:32 reconnecting to TCP connection for SSH
+2017/08/03 15:32:42 packer: 2017/08/03 15:32:42 reconnection error: dial tcp 39.108.102.188:22: getsockopt: operation timed out
+2017/08/03 15:32:42 packer: 2017/08/03 15:32:42 Retryable error: Error removing temporary script at /tmp/script_7080.sh: dial tcp 39.108.102.188:22: getsockopt: operation timed out
+2017/08/03 15:32:44 packer: 2017/08/03 15:32:44 opening new ssh session
+2017/08/03 15:32:44 packer: 2017/08/03 15:32:44 ssh session open error: 'client not available', attempting reconnect
+2017/08/03 15:32:44 packer: 2017/08/03 15:32:44 reconnecting to TCP connection for SSH
+2017/08/03 15:32:56 packer: 2017/08/03 15:32:56 reconnection error: dial tcp 39.108.102.188:22: getsockopt: operation timed out
+2017/08/03 15:32:56 packer: 2017/08/03 15:32:56 Retryable error: Error removing temporary script at /tmp/script_7080.sh: dial tcp 39.108.102.188:22: getsockopt: operation timed out
+2017/08/03 15:32:58 packer: 2017/08/03 15:32:58 opening new ssh session
+2017/08/03 15:32:58 packer: 2017/08/03 15:32:58 ssh session open error: 'client not available', attempting reconnect
+2017/08/03 15:32:58 packer: 2017/08/03 15:32:58 reconnecting to TCP connection for SSH
+2017/08/03 15:33:09 packer: 2017/08/03 15:33:09 reconnection error: dial tcp 39.108.102.188:22: getsockopt: operation timed out
+2017/08/03 15:33:09 packer: 2017/08/03 15:33:09 Retryable error: Error removing temporary script at /tmp/script_7080.sh: dial tcp 39.108.102.188:22: getsockopt: operation timed out
+2017/08/03 15:33:11 packer: 2017/08/03 15:33:11 opening new ssh session
+2017/08/03 15:33:11 packer: 2017/08/03 15:33:11 ssh session open error: 'client not available', attempting reconnect
+2017/08/03 15:33:11 packer: 2017/08/03 15:33:11 reconnecting to TCP connection for SSH
+2017/08/03 15:33:21 packer: 2017/08/03 15:33:21 reconnection error: dial tcp 39.108.102.188:22: getsockopt: operation timed out
+2017/08/03 15:33:21 packer: 2017/08/03 15:33:21 Retryable error: Error removing temporary script at /tmp/script_7080.sh: dial tcp 39.108.102.188:22: getsockopt: operation timed out
+2017/08/03 15:33:23 packer: 2017/08/03 15:33:23 opening new ssh session
+2017/08/03 15:33:23 packer: 2017/08/03 15:33:23 ssh session open error: 'client not available', attempting reconnect
+2017/08/03 15:33:23 packer: 2017/08/03 15:33:23 reconnecting to TCP connection for SSH
+2017/08/03 15:33:34 packer: 2017/08/03 15:33:34 reconnection error: dial tcp 39.108.102.188:22: getsockopt: operation timed out
+2017/08/03 15:33:34 packer: 2017/08/03 15:33:34 Retryable error: Error removing temporary script at /tmp/script_7080.sh: dial tcp 39.108.102.188:22: getsockopt: operation timed out
+2017/08/03 15:33:36 packer: 2017/08/03 15:33:36 opening new ssh session
+2017/08/03 15:33:36 packer: 2017/08/03 15:33:36 ssh session open error: 'client not available', attempting reconnect
+2017/08/03 15:33:36 packer: 2017/08/03 15:33:36 reconnecting to TCP connection for SSH
+2017/08/03 15:33:47 packer: 2017/08/03 15:33:47 reconnection error: dial tcp 39.108.102.188:22: getsockopt: operation timed out
+2017/08/03 15:33:47 packer: 2017/08/03 15:33:47 Retryable error: Error removing temporary script at /tmp/script_7080.sh: dial tcp 39.108.102.188:22: getsockopt: operation timed out
+2017/08/03 15:33:49 packer: 2017/08/03 15:33:49 opening new ssh session
+2017/08/03 15:33:49 packer: 2017/08/03 15:33:49 ssh session open error: 'client not available', attempting reconnect
+2017/08/03 15:33:49 packer: 2017/08/03 15:33:49 reconnecting to TCP connection for SSH
+2017/08/03 15:34:00 packer: 2017/08/03 15:34:00 reconnection error: dial tcp 39.108.102.188:22: getsockopt: operation timed out
+2017/08/03 15:34:00 packer: 2017/08/03 15:34:00 Retryable error: Error removing temporary script at /tmp/script_7080.sh: dial tcp 39.108.102.188:22: getsockopt: operation timed out
+2017/08/03 15:34:02 packer: 2017/08/03 15:34:02 opening new ssh session
+2017/08/03 15:34:02 packer: 2017/08/03 15:34:02 ssh session open error: 'client not available', attempting reconnect
+2017/08/03 15:34:02 packer: 2017/08/03 15:34:02 reconnecting to TCP connection for SSH
+2017/08/03 15:34:13 packer: 2017/08/03 15:34:13 reconnection error: dial tcp 39.108.102.188:22: getsockopt: operation timed out
+2017/08/03 15:34:13 packer: 2017/08/03 15:34:13 Retryable error: Error removing temporary script at /tmp/script_7080.sh: dial tcp 39.108.102.188:22: getsockopt: operation timed out
+2017/08/03 15:34:15 packer: 2017/08/03 15:34:15 opening new ssh session
+2017/08/03 15:34:15 packer: 2017/08/03 15:34:15 ssh session open error: 'client not available', attempting reconnect
+2017/08/03 15:34:15 packer: 2017/08/03 15:34:15 reconnecting to TCP connection for SSH
+2017/08/03 15:34:26 packer: 2017/08/03 15:34:26 reconnection error: dial tcp 39.108.102.188:22: getsockopt: operation timed out
+2017/08/03 15:34:26 packer: 2017/08/03 15:34:26 Retryable error: Error removing temporary script at /tmp/script_7080.sh: dial tcp 39.108.102.188:22: getsockopt: operation timed out
+2017/08/03 15:34:28 packer: 2017/08/03 15:34:28 opening new ssh session
+2017/08/03 15:34:28 packer: 2017/08/03 15:34:28 ssh session open error: 'client not available', attempting reconnect
+2017/08/03 15:34:28 packer: 2017/08/03 15:34:28 reconnecting to TCP connection for SSH
+2017/08/03 15:34:39 packer: 2017/08/03 15:34:39 reconnection error: dial tcp 39.108.102.188:22: getsockopt: operation timed out
+2017/08/03 15:34:39 packer: 2017/08/03 15:34:39 Retryable error: Error removing temporary script at /tmp/script_7080.sh: dial tcp 39.108.102.188:22: getsockopt: operation timed out
+2017/08/03 15:34:41 packer: 2017/08/03 15:34:41 opening new ssh session
+2017/08/03 15:34:41 packer: 2017/08/03 15:34:41 ssh session open error: 'client not available', attempting reconnect
+2017/08/03 15:34:41 packer: 2017/08/03 15:34:41 reconnecting to TCP connection for SSH
+2017/08/03 15:34:51 packer: 2017/08/03 15:34:51 reconnection error: dial tcp 39.108.102.188:22: getsockopt: operation timed out
+2017/08/03 15:34:51 packer: 2017/08/03 15:34:51 Retryable error: Error removing temporary script at /tmp/script_7080.sh: dial tcp 39.108.102.188:22: getsockopt: operation timed out
+2017/08/03 15:34:53 packer: 2017/08/03 15:34:53 opening new ssh session
+2017/08/03 15:34:53 packer: 2017/08/03 15:34:53 ssh session open error: 'client not available', attempting reconnect
+2017/08/03 15:34:53 packer: 2017/08/03 15:34:53 reconnecting to TCP connection for SSH
+2017/08/03 15:35:04 packer: 2017/08/03 15:35:04 reconnection error: dial tcp 39.108.102.188:22: getsockopt: operation timed out
+2017/08/03 15:35:04 packer: 2017/08/03 15:35:04 Retryable error: Error removing temporary script at /tmp/script_7080.sh: dial tcp 39.108.102.188:22: getsockopt: operation timed out
+2017/08/03 15:35:04 [INFO] (telemetry) ending shell
+2017/08/03 15:35:04 [INFO] (telemetry) found error: Retryable error: Error removing temporary script at /tmp/script_7080.sh: dial tcp 39.108.102.188:22: getsockopt: operation timed out
+2017/08/03 15:35:05 ui: [0;32m    alicloud-ecs: Detach keypair packer_5982d058-0dcb-85ed-2baf-b77365910715 from instance: i-wz93uxbb9zm8pmhkbosg[0m
+2017/08/03 15:35:05 ui: [1;32m==> alicloud-ecs: Deleting EIP because of cancellation or error...[0m
+2017/08/03 15:35:05 ui: [1;32m==> alicloud-ecs: Failed to unassociate eip.[0m
+2017/08/03 15:35:06 ui: [1;32m==> alicloud-ecs: Deleting instance because of cancellation or error...[0m
+2017/08/03 15:35:06 ui: [1;32m==> alicloud-ecs: Deleting security group because of cancellation or error...[0m
+2017/08/03 15:35:07 ui: [1;32m==> alicloud-ecs: Deleting vSwitch because of cancellation or error...[0m
+2017/08/03 15:35:08 ui: [1;32m==> alicloud-ecs: Deleting VPC because of cancellation or error...[0m
+2017/08/03 15:35:08 ui: [1;32m==> alicloud-ecs: Deleting temporary keypair...[0m
+2017/08/03 15:35:09 packer: panic: runtime error: invalid memory address or nil pointer dereference
+2017/08/03 15:35:09 packer: [signal SIGSEGV: segmentation violation code=0x1 addr=0xc0 pc=0x162e0d4]
+2017/08/03 15:35:09 packer: 
+2017/08/03 15:35:09 packer: goroutine 33 [running]:
+2017/08/03 15:35:09 packer: github.com/hashicorp/packer/builder/alicloud/ecs.(*stepRunAlicloudInstance).Cleanup(0x2f220c8, 0x2ebd940, 0xc4204f6690)
+2017/08/03 15:35:09 packer: 	/Users/mwhooker/go/src/github.com/hashicorp/packer/builder/alicloud/ecs/step_run_instance.go:46 +0x1d4
+2017/08/03 15:35:09 packer: github.com/hashicorp/packer/vendor/github.com/mitchellh/multistep.(*BasicRunner).Run(0xc420468180, 0x2ebd940, 0xc4204f6690)
+2017/08/03 15:35:09 packer: 	/Users/mwhooker/go/src/github.com/hashicorp/packer/vendor/github.com/mitchellh/multistep/basic_runner.go:82 +0x2aa
+2017/08/03 15:35:09 packer: github.com/hashicorp/packer/builder/alicloud/ecs.(*Builder).Run(0xc420258c00, 0x2ec05c0, 0xc420346380, 0x2eb85c0, 0xc420344ae0, 0x2ebf080, 0xc4202b00b8, 0xc420247f20, 0x0, 0xc42006ff80, ...)
+2017/08/03 15:35:09 packer: 	/Users/mwhooker/go/src/github.com/hashicorp/packer/builder/alicloud/ecs/builder.go:184 +0xf1a
+2017/08/03 15:35:09 packer: github.com/hashicorp/packer/packer/rpc.(*BuilderServer).Run(0xc42024f180, 0x1, 0xc420268560, 0x0, 0x0)
+2017/08/03 15:35:09 packer: 	/Users/mwhooker/go/src/github.com/hashicorp/packer/packer/rpc/builder.go:93 +0x1ea
+2017/08/03 15:35:09 packer: reflect.Value.call(0xc42006ff80, 0xc420086298, 0x13, 0x24e5a09, 0x4, 0xc4202b4f20, 0x3, 0x3, 0xc4202ab260, 0x0, ...)
+2017/08/03 15:35:09 packer: 	/usr/local/Cellar/go/1.8.3/libexec/src/reflect/value.go:434 +0x91f
+2017/08/03 15:35:09 packer: reflect.Value.Call(0xc42006ff80, 0xc420086298, 0x13, 0xc42031d720, 0x3, 0x3, 0xc42031d760, 0x1314b33, 0x2153a60)
+2017/08/03 15:35:09 packer: 	/usr/local/Cellar/go/1.8.3/libexec/src/reflect/value.go:302 +0xa4
+2017/08/03 15:35:09 packer: net/rpc.(*service).call(0xc420250c00, 0xc420250bc0, 0xc4202ca010, 0xc42009de80, 0xc4202ac240, 0x215d8a0, 0xc42026855c, 0x18a, 0x2129180, 0xc420268560, ...)
+2017/08/03 15:35:09 packer: 	/usr/local/Cellar/go/1.8.3/libexec/src/net/rpc/server.go:387 +0x144
+2017/08/03 15:35:09 packer: created by net/rpc.(*Server).ServeCodec
+2017/08/03 15:35:09 packer: 	/usr/local/Cellar/go/1.8.3/libexec/src/net/rpc/server.go:481 +0x404
+2017/08/03 15:35:09 [ERR] Error decoding response stream 19: EOF
+2017/08/03 15:35:09 [INFO] (telemetry) ending alicloud-ecs
+2017/08/03 15:35:09 [INFO] (telemetry) found error: unexpected EOF
+2017/08/03 15:35:09 ui error: [1;31mBuild 'alicloud-ecs' errored: unexpected EOF[0m
+2017/08/03 15:35:09 Builds completed. Waiting on interrupt barrier...
+2017/08/03 15:35:09 [ERR] Error decoding response stream 24: EOF
+2017/08/03 15:35:09 [ERR] Error decoding response stream 10: EOF
+2017/08/03 15:35:09 [ERR] Error decoding response stream 18: EOF
+2017/08/03 15:35:09 [ERR] Error decoding response stream 26: EOF
+2017/08/03 15:35:09 [ERR] Error decoding response stream 21: EOF
+2017/08/03 15:35:09 [ERR] Error decoding response stream 16: EOF
+2017/08/03 15:35:09 [ERR] Error decoding response stream 25: EOF
+2017/08/03 15:35:09 [ERR] Error decoding response stream 9: EOF
+2017/08/03 15:35:09 [ERR] Error decoding response stream 11: EOF
+2017/08/03 15:35:09 [ERR] Error decoding response stream 14: EOF
+2017/08/03 15:35:09 [ERR] Error decoding response stream 28: EOF
+2017/08/03 15:35:09 [ERR] Error decoding response stream 23: EOF
+2017/08/03 15:35:09 [ERR] Error decoding response stream 15: EOF
+2017/08/03 15:35:09 [ERR] Error decoding response stream 8: EOF
+2017/08/03 15:35:09 [ERR] Error decoding response stream 20: EOF
+2017/08/03 15:35:09 [ERR] Error decoding response stream 29: EOF
+2017/08/03 15:35:09 [ERR] Error decoding response stream 13: EOF
+2017/08/03 15:35:09 [ERR] Error decoding response stream 31: EOF
+2017/08/03 15:35:09 [ERR] Error decoding response stream 12: EOF
+2017/08/03 15:35:09 [ERR] Error decoding response stream 22: EOF
+2017/08/03 15:35:09 [ERR] Error decoding response stream 30: EOF
+2017/08/03 15:35:09 [ERR] Error decoding response stream 17: EOF
+2017/08/03 15:35:09 [ERR] Error decoding response stream 27: EOF
+2017/08/03 15:35:09 /Users/user/bin/packer: plugin process exited
+2017/08/03 15:35:09 machine readable: error-count []string{"1"}
+2017/08/03 15:35:09 ui error: 
+==> Some builds didn't complete successfully and had errors:
+2017/08/03 15:35:09 machine readable: alicloud-ecs,error []string{"unexpected EOF"}
+2017/08/03 15:35:09 ui error: --> alicloud-ecs: unexpected EOF
+2017/08/03 15:35:09 ui: 
+==> Builds finished but no artifacts were created.
+2017/08/03 15:35:09 [WARN] (telemetry) Error finalizing report. This is safe to ignore. Post https://checkpoint-api.hashicorp.com/v1/telemetry/packer: context deadline exceeded
+2017/08/03 15:35:09 waiting for all plugin processes to complete...
+2017/08/03 15:35:09 /Users/user/bin/packer: plugin process exited
+2017/08/03 15:35:09 /Users/user/bin/packer: plugin process exited
