@@ -23,6 +23,11 @@
       "destination": "/tmp/docker_daemon.json"
     },
     {
+      "type": "file",
+      "source": "files/admin.authorized_keys",
+      "destination": "/tmp/authorized_keys"
+    },
+    {
       "type": "shell",
       "inline": [
         "curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -",
@@ -37,7 +42,15 @@
         "mkdir -p /etc/docker",
         "mv /tmp/docker_daemon.json /etc/docker/daemon.json",
         "systemctl daemon-reload",
-        "systemctl restart docker"
+        "systemctl restart docker",
+
+        "#user admin",
+        "useradd -m -s /bin/bash admin",
+        "echo 'admin ALL=(ALL) NOPASSWD:ALL' > /etc/sudoers.d/admin",
+        "mkdir /home/admin/.ssh",
+        "mv /tmp/authorized_keys /home/admin/.ssh/",
+        "chown -R admin:admin /home/admin/.ssh",
+        "chmod -R 0600 /home/admin/.ssh"
       ]
     }
   ]
