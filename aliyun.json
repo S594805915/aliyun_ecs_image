@@ -10,7 +10,7 @@
     "image_name": "ubuntu16_04_{{user `image_version`}}",
     "type":"alicloud-ecs",
     "region":"cn-shenzhen",
-    "source_image":"ubuntu_16_0402_64_40G_alibase_20170711.vhd",
+    "source_image":"ubuntu_16_0402_64_20G_alibase_20170818.vhd",
     "ssh_username":"root",
     "instance_type":"ecs.n1.medium",
     "io_optimized":"true",
@@ -26,6 +26,11 @@
       "type": "file",
       "source": "files/admin.authorized_keys",
       "destination": "/tmp/authorized_keys"
+    },
+    {
+      "type": "file",
+      "source": "files/admin",
+      "destination": "/etc/sudoers.d/admin"
     },
     {
       "type": "shell",
@@ -46,11 +51,10 @@
 
         "#user admin",
         "useradd -m -s /bin/bash admin",
-        "echo 'admin ALL=(ALL) NOPASSWD:ALL' > /etc/sudoers.d/admin",
         "mkdir /home/admin/.ssh",
         "mv /tmp/authorized_keys /home/admin/.ssh/",
         "chown -R admin:admin /home/admin/.ssh",
-        "chmod -R 0600 /home/admin/.ssh"
+        "chmod -R 0755 /home/admin/.ssh"
       ]
     }
   ]
