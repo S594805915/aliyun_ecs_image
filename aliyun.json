@@ -38,7 +38,7 @@
         "curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -",
         "echo deb [arch=amd64] https://download.docker.com/linux/ubuntu xenial stable > /etc/apt/sources.list.d/download_docker_com_linux_ubuntu.list",
         "apt-get update",
-        "apt-get install -y telnet zip curl unzip git supervisor python-pip wget docker-ce=17.06.0~ce-0~ubuntu",
+        "apt-get install -y telnet zip curl unzip git supervisor python-pip wget docker-ce=17.09.0~ce-0~ubuntu",
         "pip install docker-py",
         "wget http://xiaoer-packages.oss-cn-shenzhen.aliyuncs.com/jdk-8u77-linux-x64.tar.gz -O /usr/local/jdk-8u77-linux-x64.tar.gz",
         "tar -xzvf /usr/local/jdk-8u77-linux-x64.tar.gz -C /usr/local/",
@@ -54,7 +54,9 @@
         "mkdir /home/admin/.ssh",
         "mv /tmp/authorized_keys /home/admin/.ssh/",
         "chown -R admin:admin /home/admin/.ssh",
-        "chmod -R 0755 /home/admin/.ssh"
+        "chmod -R 0755 /home/admin/.ssh",
+
+        "echo nameserver 192.168.10.176 > /etc/resolvconf/resolv.conf.d/base"
       ]
     }
   ]
