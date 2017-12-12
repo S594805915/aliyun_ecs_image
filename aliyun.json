@@ -33,12 +33,19 @@
       "destination": "/etc/sudoers.d/admin"
     },
     {
+      "type": "file",
+      "source": "files/ossutil64",
+      "destination": "/usr/local/bin/ossutil64"
+    },
+    {
       "type": "shell",
       "inline": [
         "curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -",
+        "wget -qO - https://artifacts.elastic.co/GPG-KEY-elasticsearch | sudo apt-key add -",
+        "echo deb https://artifacts.elastic.co/packages/6.x/apt stable main > /etc/apt/sources.list.d/elastic-6.x.list",
         "echo deb [arch=amd64] https://download.docker.com/linux/ubuntu xenial stable > /etc/apt/sources.list.d/download_docker_com_linux_ubuntu.list",
         "apt-get update",
-        "apt-get install -y telnet zip curl unzip git supervisor python-pip wget docker-ce=17.09.0~ce-0~ubuntu",
+        "apt-get install -y apt-transport-https telnet zip curl unzip git supervisor python-pip filebeat wget docker-ce=17.09.0~ce-0~ubuntu",
         "pip install docker-py",
         "wget http://xiaoer-packages.oss-cn-shenzhen.aliyuncs.com/jdk-8u77-linux-x64.tar.gz -O /usr/local/jdk-8u77-linux-x64.tar.gz",
         "tar -xzvf /usr/local/jdk-8u77-linux-x64.tar.gz -C /usr/local/",
@@ -56,7 +63,9 @@
         "chown -R admin:admin /home/admin/.ssh",
         "chmod -R 0755 /home/admin/.ssh",
 
-        "echo nameserver 192.168.10.176 > /etc/resolvconf/resolv.conf.d/head"
+        "echo nameserver 192.168.10.176 > /etc/resolvconf/resolv.conf.d/head",
+        "chmod 777 /usr/local/bin/ossutil64",
+        "ossutil64 config -e oss-cn-shenzhen.aliyuncs.com -i LTAIONERwrUN2ob8 -k SeXD8xqnyI1QbaCM04ng84lozq6HGg"
       ]
     }
   ]
