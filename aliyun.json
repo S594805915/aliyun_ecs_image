@@ -10,7 +10,7 @@
     "image_name": "ubuntu16_04_{{user `image_version`}}",
     "type":"alicloud-ecs",
     "region":"cn-shenzhen",
-    "source_image":"ubuntu_16_0402_64_20G_alibase_20170818.vhd",
+    "source_image":"ubuntu_16_0402_64_20G_alibase_20171227.vhd",
     "ssh_username":"root",
     "instance_type":"ecs.n1.medium",
     "io_optimized":"true",
@@ -64,8 +64,22 @@
         "chmod -R 0755 /home/admin/.ssh",
 
         "echo nameserver 192.168.10.176 > /etc/resolvconf/resolv.conf.d/head",
+        "cat /dev/null > /etc/resolvconf/resolv.conf.d/tail",
         "chmod 777 /usr/local/bin/ossutil64",
-        "ossutil64 config -e oss-cn-shenzhen-internal.aliyuncs.com -i LTAIONERwrUN2ob8 -k SeXD8xqnyI1QbaCM04ng84lozq6HGg"
+        "ossutil64 config -e oss-cn-shenzhen-internal.aliyuncs.com -i LTAIONERwrUN2ob8 -k SeXD8xqnyI1QbaCM04ng84lozq6HGg",
+        "#install zabbix agent",
+        "wget http://repo.zabbix.com/zabbix/3.4/ubuntu/pool/main/z/zabbix-release/zabbix-release_3.4-1+xenial_all.deb -O /tmp/zabbix-release_3.4-1+xenial_all.deb",
+        "cd /tmp && dpkg -i zabbix-release_3.4-1+xenial_all.deb",
+        "apt-get update && apt-get install -y zabbix-agent",
+        "service zabbix-agent stop",
+        "sed -i '/^ServerActive/d' /etc/zabbix/zabbix_agentd.conf",
+        "sed -i '/^Server/d' /etc/zabbix/zabbix_agentd.conf",
+        "sed -i '/^Hostname/d' /etc/zabbix/zabbix_agentd.conf",
+        "echo ServerActive=zabbix.xiaoerzuche.com:10051 >> /etc/zabbix/zabbix_agentd.conf",
+        "echo Server=zabbix.xiaoerzuche.com >> /etc/zabbix/zabbix_agentd.conf",
+        "echo HostMetadataItem=system.uname >> /etc/zabbix/zabbix_agentd.conf",
+        "echo HostnameItem=system.hostname >> /etc/zabbix/zabbix_agentd.conf"
+        ""
       ]
     }
   ]
