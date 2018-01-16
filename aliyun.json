@@ -65,7 +65,7 @@
 
         "echo nameserver 192.168.10.176 > /etc/resolvconf/resolv.conf.d/head",
         "chmod 777 /usr/local/bin/ossutil64",
-        "ossutil64 config -e oss-cn-shenzhen.aliyuncs.com -i LTAIONERwrUN2ob8 -k SeXD8xqnyI1QbaCM04ng84lozq6HGg"
+        "ossutil64 config -e oss-cn-shenzhen-internal.aliyuncs.com -i LTAIONERwrUN2ob8 -k SeXD8xqnyI1QbaCM04ng84lozq6HGg"
       ]
     }
   ]
