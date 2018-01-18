@@ -38,6 +38,16 @@
       "destination": "/usr/local/bin/ossutil64"
     },
     {
+      "type": "file",
+      "source": "files/auto_mount_nfs.sh",
+      "destination": "/usr/local/bin/auto_mount_nfs.sh"
+    },
+    {
+      "type": "file",
+      "source": "files/rc.local",
+      "destination": "/etc/rc.local"
+    },
+    {
       "type": "shell",
       "inline": [
         "curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -",
@@ -78,8 +88,9 @@
         "echo ServerActive=zabbix.xiaoerzuche.com:10051 >> /etc/zabbix/zabbix_agentd.conf",
         "echo Server=zabbix.xiaoerzuche.com >> /etc/zabbix/zabbix_agentd.conf",
         "echo HostMetadataItem=system.uname >> /etc/zabbix/zabbix_agentd.conf",
-        "echo HostnameItem=system.hostname >> /etc/zabbix/zabbix_agentd.conf"
-        ""
+        "echo HostnameItem=system.hostname >> /etc/zabbix/zabbix_agentd.conf",
+        "chmod u+x /usr/local/bin/auto_mount_nfs.sh",
+        "chown 755 /etc/rc.local"
       ]
     }
   ]
